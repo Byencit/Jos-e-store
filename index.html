@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Jos City Mall E-Store</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+        header {
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+            color: #3b4a59;
+        }
+        nav{
+            margin-top: 10px;
+        }
+         nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        } 
+         nav ul li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+        nav a {
+            text-decoration: none;
+            color: #3b4a59;
+            font-weight: bold;
+            font-size: 16px;
+            transition: color 0.3s;
+        } 
+        nav a:hover {
+        color: #3498db; 
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        .products-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .product {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .product img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+            border-radius: 8px;
+        }
+
+        .product h2 {
+            margin-top: 0;
+            font-size: 20px;
+            color: #3b4a59;
+        }
+
+        .product p {
+            color: #666;
+        }
+
+        .product-details {
+            flex: 1;
+        }
+
+        button {
+            background-color: #3498db;  
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        button:hover {
+            background-color: #35b929;  
+        }
+
+        .cart {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .cart h2 {
+            font-size: 20px;
+            color: #3b4a59;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        li span {
+            float: right;
+            font-weight: bold;
+        }
+
+        .cart-total {
+            font-size: 18px;
+            color: #3b4a59;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1><a href="index.html">My Jos City Mall E-Store</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="clothes.html">Clothes and Accessories</a></li>
+                    <li><a href="groceries.html">Groceries/Food Mart</a></li>
+                    <li><a href="electronics.html">Electronics</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container products-container">
+        <div class="product">
+            <img src="product1.jpg" alt="Product 1">
+            <h2>Product 1</h2>
+            <p>Description: Delicious Food Item 1</p>
+            <p>Price: $10.00</p>
+            <button onclick="addToCart('Product 1', 10.00)">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="product2.jpg" alt="Product 2">
+            <h2>Product 2</h2>
+            <p>Description: Tasty Snack 2</p>
+            <p>Price: $8.00</p>
+            <button onclick="addToCart('Product 2', 8.00)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="product2.jpg" alt="Product 2">
+            <h2>Product 2</h2>
+            <p>Description: Tasty Snack 2</p>
+            <p>Price: $8.00</p>
+            <button onclick="addToCart('Product 2', 8.00)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="product2.jpg" alt="Product 2">
+            <h2>Product 2</h2>
+            <p>Description: Tasty Snack 2</p>
+            <p>Price: $8.00</p>
+            <button onclick="addToCart('Product 2', 8.00)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="product2.jpg" alt="Product 2">
+            <h2>Product 2</h2>
+            <p>Description: Tasty Snack 2</p>
+            <p>Price: $8.00</p>
+            <button onclick="addToCart('Product 2', 8.00)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="product2.jpg" alt="Product 2">
+            <h2>Product 2</h2>
+            <p>Description: Tasty Snack 2</p>
+            <p>Price: $8.00</p>
+            <button onclick="addToCart('Product 2', 8.00)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="product2.jpg" alt="Product 2">
+            <h2>Product 2</h2>
+            <p>Description: Tasty Snack 2</p>
+            <p>Price: $8.00</p>
+            <button onclick="addToCart('Product 2', 8.00)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="product2.jpg" alt="Product 2">
+            <h2>Product 2</h2>
+            <p>Description: Tasty Snack 2</p>
+            <p>Price: $8.00</p>
+            <button onclick="addToCart('Product 2', 8.00)">Add to Cart</button>
+        </div>
+        
+        <div class="product">
+            <img src="product2.jpg" alt="Product 2">
+            <h2>Product 2</h2>
+            <p>Description: Tasty Snack 2</p>
+            <p>Price: $8.00</p>
+            <button onclick="addToCart('Product 2', 8.00)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="product2.jpg" alt="Product 2">
+            <h2>Product 2</h2>
+            <p>Description: Tasty Snack 2</p>
+            <p>Price: $8.00</p>
+            <button onclick="addToCart('Product 2', 8.00)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="product2.jpg" alt="Product 2">
+            <h2>Product 2</h2>
+            <p>Description: Tasty Snack 2</p>
+            <p>Price: $8.00</p>
+            <button onclick="addToCart('Product 2', 8.00)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="product2.jpg" alt="Product 2">
+            <h2>Product 2</h2>
+            <p>Description: Tasty Snack 2</p>
+            <p>Price: $8.00</p>
+            <button onclick="addToCart('Product 2', 8.00)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="product2.jpg" alt="Product 2">
+            <h2>Product 2</h2>
+            <p>Description: Tasty Snack 2</p>
+            <p>Price: $8.00</p>
+            <button onclick="addToCart('Product 2', 8.00)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="product2.jpg" alt="Product 2">
+            <h2>Product 2</h2>
+            <p>Description: Tasty Snack 2</p>
+            <p>Price: $8.00</p>
+            <button onclick="addToCart('Product 2', 8.00)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="product2.jpg" alt="Product 2">
+            <h2>Product 2</h2>
+            <p>Description: Tasty Snack 2</p>
+            <p>Price: $8.00</p>
+            <button onclick="addToCart('Product 2', 8.00)">Add to Cart</button>
+        </div>
+
+        <!-- Repeat the product div for additional products -->
+
+        <div class="cart">
+            <h2>Shopping Cart</h2>
+            <ul id="cart-items"></ul>
+            <p class="cart-total">Total: $<span id="cart-total">0.00</span></p>
+            <button onclick="checkout()">Checkout</button>
+        </div>
+    </div>
+
+    <script>
+        var cartItems = [];
+        var cartTotal = 0;
+
+        function addToCart(productName, price) {
+            cartItems.push({ name: productName, price: price });
+            cartTotal += price;
+
+            updateCartDisplay();
+        }
+
+        function updateCartDisplay() {
+            var cartItemsElement = document.getElementById('cart-items');
+            var cartTotalElement = document.getElementById('cart-total');
+
+            // Clear previous items
+            cartItemsElement.innerHTML = '';
+
+            // Display current items
+            cartItems.forEach(function(item) {
+                var listItem = document.createElement('li');
+                listItem.textContent = item.name + ' - $' + item.price.toFixed(2);
+                var span = document.createElement('span');
+                span.textContent = '$' + item.price.toFixed(2);
+                listItem.appendChild(span);
+                cartItemsElement.appendChild(listItem);
+            });
+
+            // Display total
+            cartTotalElement.textContent = cartTotal.toFixed(2);
+        }
+
+        function checkout() {
+            alert('Thank you for your purchase! Total: $' + cartTotal.toFixed(2));
+
+            // Clear the cart after checkout
+            cartItems = [];
+            cartTotal = 0;
+
+            updateCartDisplay();
+        }
+    </script>
+
+</body>
+</html>
